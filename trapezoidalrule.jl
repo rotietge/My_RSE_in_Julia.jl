@@ -1,6 +1,7 @@
 
 # Activate the Julia project
 using Pkg
+using Plots, LaTeXStrings
 Pkg.activate(@__DIR__)
 Pkg.instantiate()
 
@@ -51,17 +52,30 @@ res1 = -1/200 *(sin(200)-sin(0))
 res2 = 2*pi*im
 res3 = [2,2,8/3,4]
 res4 = trapezoidal_rule(ftest4,-1,2)
+
+function plotConvergence(func, a,b, result; nstart = 1, nstep = 10, nstop = 100)   
+     
+        n_plot =[]
+        diff_plot = []
+        for n in range(nstart,nstep,nstop)
+            append!(n_plot, n)
+            append!(diff_plot, trapezoidal_rule(func,a, b)-result)
+        end
+        
+     
+     plot(n_plot, diff_plot, xguide = L"N", yguide = L"diff to real integral", label = "")
+end
 println(trapezoidal_rule(ftest1,0,1))
-println(-1/200 *(sin(200)-sin(0)))
-println()
+
 
 println(trapezoidal_rule(ftest2,0,2*pi))
-println(2*pi*im)
-println()
 
 println(trapezoidal_rule(ftest3,0,2))
-println([2,2,8/3,4])
-println()
 
 println(trapezoidal_rule(ftest4,-1,2))
-println(exp(2)+2*exp(-1))
+
+
+#simpel wäre unicode-plots, error message
+#ERROR: could not load library "libGR.dll"
+#The specified module could not be found.
+plotConvergence(ftest1,0,1,res1)
