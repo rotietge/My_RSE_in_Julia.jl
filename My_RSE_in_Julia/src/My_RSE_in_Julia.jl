@@ -3,10 +3,7 @@ module My_RSE_in_Julia
 export trapezoidal_rule
 
 # Activate the Julia project
-using Pkg
-using Plots, LaTeXStrings
-Pkg.activate(@__DIR__)
-Pkg.instantiate()
+using LaTeXStrings
 
 # load packages
 #using LinearAlgebra

@@ -2,3 +2,6 @@ name = "My_RSE_in_Julia"
 uuid = "15ccef39-6857-4ad0-81dc-20096a1da9ac"
 authors = ["Robin Tietgen <rotietge@students.uni.mainz.de>"]
 version = "0.1.0"
+
+[deps]
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
