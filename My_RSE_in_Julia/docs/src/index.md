@@ -11,3 +11,8 @@ the Moodle platform of JGU Mainz.
 ## License info
 
 This project is licensed under the MIT license (see [License](@ref)).
+
+'''@autodocs
+Modules = [My_RSE_in_Julia]
+'''
+
