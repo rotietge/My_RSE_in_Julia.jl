@@ -12,7 +12,7 @@ the Moodle platform of JGU Mainz.
 
 This project is licensed under the MIT license (see [License](@ref)).
 
+```
 @autodocs
 Modules = [My_RSE_in_Julia]
-
-
+```
