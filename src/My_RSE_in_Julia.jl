@@ -69,18 +69,16 @@ function plotConvergence(func, a,b, result; nstart = 1, nstep = 10, nstop = 100)
 end
 
 
-println(trapezoidal_rule(ftest1,0,1))
+#println(trapezoidal_rule(ftest1,0,1))
 
 
-println(trapezoidal_rule(ftest2,0,2*pi))
+#println(trapezoidal_rule(ftest2,0,2*pi))
 
-println(trapezoidal_rule(ftest3,0,2))
+#println(trapezoidal_rule(ftest3,0,2))
 
-println(trapezoidal_rule(ftest4,-1,2))
+#println(trapezoidal_rule(ftest4,-1,2))
 
-testfunc(x) = 1
 
-println(trapezoidal_rule(testfunc,0,2))
 
 #simpel wäre unicode-plots, error message
 #ERROR: could not load library "libGR.dll"
