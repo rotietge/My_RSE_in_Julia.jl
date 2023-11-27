@@ -1,5 +1,5 @@
 using Test
-#using .My_RSE_in_Julia
+using My_RSE_in_Julia
 
 testfunc(x) = 1
 
